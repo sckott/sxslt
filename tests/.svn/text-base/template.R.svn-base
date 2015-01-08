@@ -1,0 +1,9 @@
+  # db2latex uses include, not import.
+library(Sxslt)
+doc = xsltParseStyleSheet("~/db2latex-xsl-0.8pre1/xsl/docbook.xsl")
+doc = xsltParseStyleSheet("http://db2latex.sourceforge.net/current/xsl/docbook.xsl")
+getTemplate(doc, "para")
+
+
+doc = xsltParseStyleSheet("http://www.omegahat.org/XSL/fo/Rfo.xsl")
+getTemplate(doc, "para")

@@ -1,0 +1,4 @@
+# Test the r:as call
+library(Sxslt)
+foo = function() pi
+doc = xsltApplyStyleSheet(I("<doc/>"), "~/Projects/org/omegahat/XML/XSL/S/libxslt/tests/as.xsl")
